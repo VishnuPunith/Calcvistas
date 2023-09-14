@@ -9,9 +9,9 @@
             Conversion Tool<i class="el-icon-arrow-down el-icon--right"></i>
           </el-button>
           <el-dropdown-menu slot="dropdown" class="drop">
-            <el-dropdown-item>Convert Cm to Km</el-dropdown-item>
-            <el-dropdown-item>Convert Cm to M</el-dropdown-item>
-            <el-dropdown-item>AC to DC Converter</el-dropdown-item>
+            <el-dropdown-item><router-link to="/cmtokm" class="textd">M to Km</router-link></el-dropdown-item>
+            <el-dropdown-item><router-link to="/cmtom" class="textd">Convert Cm to M</router-link></el-dropdown-item>
+            <el-dropdown-item><router-link to="/AC_to_DC" class="textd">AC to DC Converter</router-link></el-dropdown-item>
             <el-dropdown-item>Convert Inch to Feet</el-dropdown-item>
             <el-dropdown-item>Convert Meter to kilometer</el-dropdown-item>
             <el-dropdown-item>Convert Square Meter to Acre</el-dropdown-item>
@@ -120,6 +120,9 @@ body {
     gap: 22px;
     justify-content: center;
     padding: 49px;
+}
+.textd{
+  text-decoration: none;
 }
 .el-dropdown {
   vertical-align: top;
